@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -13,7 +16,8 @@ body {
   height: 100vh;
 
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
 
   max-height: 100vh;
@@ -23,4 +27,76 @@ body {
 #container object {
   width: 80%;
   height: 80%;
+  margin: 3%;
+}
+
+#goals {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+
+  max-width: 30%;
+  margin: 3%;
+
+  height: 60vh;
+  width: 50vw;
+
+  background: #fff;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+
+  border-radius: 20px;
+}
+
+#timer span {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+#phrases {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+}
+
+#phrase {
+  width: 22vw;
+}
+#phrase span {
+  font-size: 16px;
+}
+
+.arrow {
+  margin: auto;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+.right {
+  transform: rotate(180deg);
+}
+
+#create-goal {
+  margin-bottom: 5%;
+
+  width: 50%;
+  height: 50px;
+  border-radius: 50px;
+
+  background: #fff;
+  border: 2px solid #6c63ff;
+
+  font-size: 16px;
+  color: #6c63ff;
+
+  transition: 0.5s;
+
+  cursor: pointer;
+}
+#create-goal:hover {
+  background: #6c63ff;
+  color: #fff;
+  transition: 0.5s;
 }
