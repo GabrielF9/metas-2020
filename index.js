@@ -13,7 +13,7 @@ const phrases = ['Celebre o que você deseja ver mais. - Tom Peters',
 window.addEventListener('load', () => {
   setTimeout(() => {
     document.querySelector('object').style.position = 'relative';
-    document.querySelector('object').style.animation = 'fromright 1s ease-in-out';
+    document.querySelector('object').style.animation = 'fromright 1s ease';
     setTimeout(() => {
       document.getElementById('goals').style.display = 'flex';
     }, 1000)
