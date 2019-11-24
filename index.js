@@ -11,6 +11,14 @@ const phrases = ['Celebre o que você deseja ver mais. - Tom Peters',
 ];
 
 window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.querySelector('object').style.position = 'relative';
+    document.querySelector('object').style.animation = 'fromright 1s ease';
+    setTimeout(() => {
+      document.getElementById('goals').style.display = 'flex';
+    }, 1000)
+  }, 1005);
+
   const newYear = new Date(2020, 0, 1).getTime();
 
   let timer = setInterval(() => {
@@ -71,6 +79,6 @@ window.addEventListener('load', () => {
   });
 
   createGoals.addEventListener('click', () => {
-    console.log('Button clicked');
+    document.location.href = "goals/goals.html";
   });
 });

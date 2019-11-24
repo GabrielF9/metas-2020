@@ -31,7 +31,7 @@ body {
 }
 
 #goals {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -39,6 +39,7 @@ body {
 
   max-width: 30%;
   margin: 3%;
+  margin-left: 0;
 
   height: 60vh;
   width: 50vw;
@@ -99,4 +100,27 @@ body {
   background: #6c63ff;
   color: #fff;
   transition: 0.5s;
+}
+
+.goals-animation {
+  position: relative;
+  animation: frombottom 1s;
+}
+
+@keyframes frombottom {
+  from {
+    bottom: -100px;
+  }
+  to {
+    bottom: 0;
+  }
+}
+
+@keyframes fromright {
+  from {
+    right: 0px;
+  }
+  to {
+    right: 226px;
+  }
 }
