@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Varela+Round&display=swap");
 
 * {
   margin: 0;
@@ -53,6 +54,7 @@ body {
 #timer span {
   font-size: 35px;
   font-weight: bold;
+  font-family: "Varela Round", sans-serif;
 }
 
 #phrases {

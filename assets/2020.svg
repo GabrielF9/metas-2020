@@ -256,7 +256,7 @@
   #left_fwork,
   #right_fwork,
   #midle_fwork {
-    animation: explode 1.5s infinite ease;
+    animation: explode 1.5s infinite ease 2;
     transform-origin: center;
     transform-box: fill-box;
   }
