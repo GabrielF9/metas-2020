@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Varela+Round&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  text-align: center;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#goals {
+  height: 100vh;
+  width: 70%;
+  background: rgba(108, 99, 255, 1);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+#goals-title {
+  color: #fff;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+#goals-list li {
+  list-style: none;
+  color: #fff;
+  font-size: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#goals-list li img {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 22px;
+  cursor: pointer;
+}
+
+#verified {
+  text-decoration: line-through;
+}
+
+#form {
+  width: 30%;
+}
+
+#form object {
+  margin-bottom: 50px;
+  width: 350px;
+}
+
+input {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  transition: 0.5s;
+}
+input[type="text"] {
+  background: #fff;
+  border: 2px solid #6c63ff;
+  width: 65%;
+  height: 50px;
+  outline: none;
+  padding: 0 25px;
+  border-radius: 25px 0 0 25px;
+  color: #6c63ff;
+}
+input[type="text"]::placeholder {
+  color: #6c63ff;
+  opacity: 0.6;
+}
+input[type="button"] {
+  position: relative;
+  left: -5px;
+  border-radius: 0 25px 25px 0;
+  width: 22%;
+  height: 50px;
+  border: 2px solid #6c63ff;
+  outline: none;
+  cursor: pointer;
+  background: #fff;
+  color: #6c63ff;
+}
+input[type="button"]:hover {
+  color: #fff;
+  background: #6c63ff;
+}
